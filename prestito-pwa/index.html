@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simulazione Prestito</title>
+<meta name="description" content="Simula il tuo prestito e confrontalo con offerte di rinegoziazione o surroga.">
+<meta name="theme-color" content="#1f4e78">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="app-header">
+  <h1>Simulazione Prestito</h1>
+  <p class="subtitle">Conviene rinegoziare o fare la surroga?</p>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Sezioni">
+  <button class="tab active" data-tab="attuale" role="tab" aria-selected="true">Attuale</button>
+  <button class="tab" data-tab="a" role="tab" aria-selected="false">Scenario A</button>
+  <button class="tab" data-tab="b" role="tab" aria-selected="false">Scenario B</button>
+  <button class="tab" data-tab="c" role="tab" aria-selected="false">Scenario C</button>
+  <button class="tab" data-tab="confronto" role="tab" aria-selected="false">Confronto</button>
+</nav>
+
+<main id="app"></main>
+
+<footer class="app-footer">
+  <p>I dati restano solo su questo dispositivo (nessun invio a server). Modello semplificato: ammortamento alla francese, tasso fisso ipotizzato costante.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
